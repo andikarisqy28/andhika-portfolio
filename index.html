@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andhika | Computer Engineering Portfolio</title>
+  <meta name="description" content="Portofolio tugas kuliah Andhika, mahasiswa Teknik Komputer." />
+  <style>
+    :root { --bg:#0b1120; --panel:#111b2e; --text:#eef3ff; --muted:#a8b5cc; --accent:#55d6be; --line:#24334d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,Segoe UI,Arial,sans-serif; color:var(--text); background:linear-gradient(150deg,#0b1120,#101c31 65%,#0b1120); line-height:1.6; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { opacity:.8; }
+    .wrap { width:min(1000px,92%); margin:auto; }
+    header { padding:22px 0; border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
+    .brand { font-weight:800; letter-spacing:.4px; }
+    nav ul { display:flex; gap:20px; padding:0; margin:0; list-style:none; color:var(--muted); font-size:.95rem; }
+    .hero { padding:85px 0 70px; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:.8rem; }
+    h1 { font-size:clamp(2.5rem,7vw,5rem); line-height:1.05; margin:14px 0; letter-spacing:-2px; }
+    h1 span { color:var(--accent); }
+    .hero p { color:var(--muted); max-width:650px; font-size:1.1rem; }
+    .btn { display:inline-block; margin-top:20px; padding:11px 18px; border-radius:10px; background:var(--accent); color:#06151b; font-weight:700; }
+    section { padding:45px 0; }
+    h2 { font-size:1.8rem; margin:0 0 22px; }
+    .about { color:var(--muted); max-width:750px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
+    .card { background:rgba(17,27,46,.9); border:1px solid var(--line); border-radius:16px; padding:22px; }
+    .card h3 { margin:0 0 10px; }
+    .card p { color:var(--muted); margin:0; }
+    .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top:16px; }
+    .tag { border:1px solid var(--line); color:var(--accent); border-radius:999px; padding:4px 10px; font-size:.8rem; }
+    .contact-box { display:flex; gap:12px; flex-wrap:wrap; }
+    footer { border-top:1px solid var(--line); margin-top:35px; padding:25px 0; color:var(--muted); font-size:.9rem; }
+    @media(max-width:600px) { nav ul { gap:12px; flex-wrap:wrap; } .hero { padding:60px 0 45px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">ANDHIKA<span style="color:var(--accent)">.</span></div>
+        <ul>
+          <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Computer Engineering Student</div>
+      <h1>Hi, I'm <span>Andhika.</span></h1>
+      <p>Mahasiswa Teknik Komputer yang tertarik mempelajari elektronika, pemrograman, pengolahan sinyal, dan simulasi sistem. Saya senang mencoba hal baru serta mengembangkan kemampuan melalui proyek dan praktikum.</p>
+      <a class="btn" href="#projects">Lihat Proyek</a>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="about">Saya Andhika Risqy Rudiyanto, mahasiswa Program Studi Teknik Komputer di Politeknik Negeri Samarinda. Saat ini saya terus belajar memahami konsep teknis, mengerjakan tugas praktikum, dan menerapkan materi kuliah melalui proyek sederhana.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills & Learning</h2>
+      <div class="grid">
+        <article class="card"><h3>Analytical Thinking</h3><p>Mengurai masalah dan mencoba menentukan langkah penyelesaian secara terstruktur.</p></article>
+        <article class="card"><h3>Independent Learning</h3><p>Mencari referensi, mempelajari tools baru, dan menerapkannya dalam tugas.</p></article>
+        <article class="card"><h3>Teamwork & Communication</h3><p>Berdiskusi, bertukar ide, dan berkolaborasi saat mengerjakan tugas.</p></article>
+        <article class="card"><h3>Technical Practice</h3><p>Belajar dasar pemrograman, rangkaian elektronika, simulasi, dan dokumentasi praktikum.</p></article>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>FIR Filter — Signal Processing</h3>
+          <p>Proyek pengolahan sinyal menggunakan MATLAB untuk menjalankan kode dan menampilkan visualisasi grafik sebagai hasil proses filter.</p>
+          <div class="tags"><span class="tag">MATLAB</span><span class="tag">Signal Processing</span><span class="tag">Plotting</span></div>
+        </article>
+        <article class="card">
+          <h3>Arduino Uno — Push Button & LED</h3>
+          <p>Simulasi rangkaian input push button dan output dua LED. Program Arduino membaca kondisi tombol dan mengendalikan indikator LED.</p>
+          <div class="tags"><span class="tag">Arduino Uno</span><span class="tag">Tinkercad</span><span class="tag">Wokwi</span></div>
+        </article>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <a class="btn" href="mailto:andikarisqy28@gmail.com">Email Me</a>
+        <a class="btn" href="https://github.com/andikarisqy28" target="_blank" rel="noopener">GitHub Profile</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Andhika Risqy Rudiyanto · Student Portfolio</div></footer>
+</body>
+</html>
